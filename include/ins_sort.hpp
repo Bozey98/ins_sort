@@ -14,23 +14,3 @@ void ins_sorting(Iterator start, Iterator end)
 			iter_swap(j - 1, j);
 		
 }
-int main()
-{
-	vector <int> test;
-	for (int i = 0; i < 10; i++) {
-		test.push_back(rand() % 100);
-		cout << test[i] << "  ";
-	}
-
-	cout << endl;
-
-	ins_sorting(test.begin(), test.end());
-
-	for (int i = 0; i < 10; i++) {
-		cout << test[i] << "  ";
-	}
-
-	system("pause");
-    return 0;
-}
-
